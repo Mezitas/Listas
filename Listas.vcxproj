@@ -128,9 +128,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Nodo.cpp" />
     <ClCompile Include="SimpleList.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Nodo.h" />
     <ClInclude Include="SimpleList.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

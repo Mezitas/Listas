@@ -1,12 +1,13 @@
 #define SimpleList_H
 #ifdef SimpleList_H
+#include "Nodo.h"
 class SList {
-private:
-	int valor;
-	int* proximo;
+	Nodo* cabeza;
 public:
-	SList(int valor) :valor(valor), proximo(NULL) {}
-	void agregarNuevo(int* nuevo);
+	SList() :cabeza() {}
+	void agregarNuevo(int nuevo);
+	int imprimir();
+	void borrar();
 };
 
 
