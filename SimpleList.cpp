@@ -24,7 +24,7 @@ int SList::imprimir(int valor) {
 		for (int i = 0; i <= valor;i++) {
 			if (temporal->proximo == nullptr){
 				if (i < valor) {
-					throw("Valor puntero invalido");
+					throw(OverList_Exception("Valor puntero invalido"));
 				}
 				else {
 					return temporal->valor;

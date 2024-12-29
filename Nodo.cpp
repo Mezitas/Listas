@@ -5,5 +5,5 @@
 
 Nodo::Nodo(int valor): 
 	valor (valor),
-	proximo (NULL),
-	anterior (NULL){};
+	proximo (nullptr),
+	anterior (nullptr){};

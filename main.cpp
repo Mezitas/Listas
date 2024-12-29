@@ -6,7 +6,8 @@
 int main() {
 	SList nuevo;
 	nuevo.agregarNuevo(1);
-	std::cout << nuevo.imprimir(0) << std::endl;
+	nuevo.agregarNuevo(2);
+	std::cout << nuevo.imprimir(1) << std::endl;
 	nuevo.borrar();
 	return 0;
 }

@@ -1,3 +1,2 @@
-﻿  SimpleList.cpp
-D:\PersonalProyect\Listas\Listas\SimpleList.cpp(42,1): warning C4715: 'SList::imprimir': no todas las rutas de acceso de control devuelven un valor
+﻿  main.cpp
   Listas.vcxproj -> D:\PersonalProyect\Listas\x64\Debug\Listas.exe
