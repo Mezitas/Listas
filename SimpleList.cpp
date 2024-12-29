@@ -4,20 +4,16 @@
 #include "SimpleList.h"
 
 void SList::agregarNuevo(int valor) {
-	if (cabeza->proximo == NULL) {
-		Nodo* nuevo = new Nodo(valor);
-		cabeza->proximo = nuevo;
+	Nodo* nuevo = new Nodo(valor);
+	if (cabeza == NULL) {
+		cabeza = nuevo;
 	}
 	else {
-		Nodo* otro = new Nodo(0);
-		cabeza->proximo = otro;
-		while (otro->proximo != NULL) {
-			otro->proximo = otro;
-			if (otro->proximo == NULL) {
-				Nodo* nuevo = new Nodo(valor);
-				otro->proximo = nuevo;
-			}
+		Nodo* temporal = cabeza;
+		while (temporal->proximo != NULL) {
+			temporal = temporal->proximo;
 		}
+		temporal->proximo = nuevo;
 	}
 }
 int SList::imprimir() {

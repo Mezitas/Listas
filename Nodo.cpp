@@ -3,8 +3,7 @@
 //_H documents
 #include "Nodo.h"
 
-Nodo::Nodo(int valor) {
-	this->valor = valor;
-	proximo = NULL;
-	anterior = NULL;
-};
+Nodo::Nodo(int valor): 
+	valor (valor),
+	proximo (NULL),
+	anterior (NULL){};
