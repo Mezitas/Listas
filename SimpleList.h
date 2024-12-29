@@ -4,9 +4,9 @@
 class SList {
 	Nodo* cabeza;
 public:
-	SList() :cabeza() {}
+	SList() :cabeza(nullptr) {}
 	void agregarNuevo(int nuevo);
-	int imprimir();
+	int imprimir(int valor);
 	void borrar();
 };
 
