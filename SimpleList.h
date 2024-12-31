@@ -7,7 +7,7 @@ public:
 	SList() :cabeza(nullptr) {}
 	void agregarNuevo(int nuevo);
 	int imprimir(int valor);
-	void borrar();
+	void borrarElemento(int valor);
 };
 
 
